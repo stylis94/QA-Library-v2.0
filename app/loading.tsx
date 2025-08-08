@@ -1,13 +1,14 @@
 export default function Loading() {
   return (
-    <main className="min-h-[60vh] w-full p-8 flex items-center justify-center">
-      <div className="flex items-center gap-3 text-neutral-600" role="status" aria-live="polite" aria-busy="true">
-        <span
-          className="inline-block h-5 w-5 rounded-full border-2 border-neutral-300 border-t-neutral-500 animate-spin"
-          aria-hidden="true"
-        />
-        <span className="text-sm font-medium">Loading…</span>
-      </div>
-    </main>
+    <div className="min-h-screen bg-white dark:bg-slate-900">
+      <main className="container mx-auto px-4 py-10">
+        <div className="space-y-6 animate-pulse">
+          <div className="h-8 w-48 rounded bg-slate-200 dark:bg-slate-700" />
+          <div className="h-4 w-full rounded bg-slate-200 dark:bg-slate-700" />
+          <div className="h-4 w-5/6 rounded bg-slate-200 dark:bg-slate-700" />
+          <div className="h-4 w-2/3 rounded bg-slate-200 dark:bg-slate-700" />
+        </div>
+      </main>
+    </div>
   )
 }
